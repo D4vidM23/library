@@ -1,0 +1,24 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.box {
+  background-color: #6da0b2;
+  width: 240px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+
+}
+
+.welcome {
+  color: white;
+  font-weight: bold;
+  font-family: "Book Antiqua";
+  padding-top: 10px;
+}
