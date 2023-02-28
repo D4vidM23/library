@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+    h3 Books
+    a(href='/views/index') Go Back
+    a(href='/books/add') Add New Book
+    table
+        thead
+            tr
+                th
+                th
+                th
+                th
+        tbody
+            each book in books
+                tr
+                    td.ti= book.title
+                    td.au= book.author
+                    td.pu= book.publisher
+                    td= book.genre
+                    td= book.pages
+                    td= book.description
+                        a(href=`/books/profile/${book.id}`) View Book

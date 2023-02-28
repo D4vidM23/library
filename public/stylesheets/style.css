@@ -9,7 +9,7 @@ a {
 
 .box {
   background-color: #6da0b2;
-  width: 240px;
+  width: 440px;
   height: 40px;
   text-align: center;
   border-radius: 10px;
@@ -20,5 +20,32 @@ a {
   color: white;
   font-weight: bold;
   font-family: "Book Antiqua";
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+.b {
+  margin-top: 20px;
+  background-color: #aecad3;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
   padding-top: 10px;
+}
+
+.but {
+  color: white;
+  font-weight: bold ;
+}
+
+tr {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px black;
+}
+
+a {
+  margin-right: 10px;
 }
