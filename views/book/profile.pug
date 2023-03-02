@@ -2,8 +2,12 @@ extends ../layout
 
 block content
     h3= book.title
-
+    a(href=`/books`) Back
+    a(href=`/books/edit/${book.id}`) Edit Book
+    a(href=`/books/delete/${book.id}`) Delete Book
     div
         p Author: #{book.author}
+        p Publisher: #{book.publisher}
         p Genre: #{book.genre}
+        p Pages: #{book.pages}
         p= book.description

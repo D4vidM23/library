@@ -1,4 +1,4 @@
-mixin bookForm(book, saveUrl, cancelUrl)
+mixin bookForm(book, genre, saveUrl, cancelUrl)
 
     div.form-container
         form(action=saveUrl method='post')
@@ -6,34 +6,32 @@ mixin bookForm(book, saveUrl, cancelUrl)
                 label(for='title') Book Title
                 input(id='title' name='title' value= book.title)
 
-    div.form-input
-        label(for='author') Author
-        input(id='author' name='author' value= book.author)
+            div.form-input
+                label(for='author') Author
+                input(id='author' name='author' value= book.author)
 
-    div.form-input
-        label(for='genre') Genre
-        select(id='genre' name='genre')
-            each genre in genres
-                option(value=genre selected = (genre === book.genre)) #{genre}
+            div.form-input
+                label(for='genre') Genre
+                select(id='genre' name='genre')
+                    each genre in genres
+                        option(value=genre selected = (genre === book.genre)) #{genre}
 
-    div.form-input
-        label(for='publisher') Publisher
-        input(id='publisher' name='publisher' value= book.publisher)
+            div.form-input
+                label(for='publisher') Publisher
+                input(id='publisher' name='publisher' value= book.publisher)
 
-    div.form-input
-        label(for='image') Image
-        input(id='image' name='image' value= book.image)
+            div.form-input
+                label(for='image') Image
+                input(id='image' name='image' value= book.image)
 
-    div.form-input
-        label(for='pages') Amount of Pages
-        input(id='pages' name='pages' value= book.pages)
+            div.form-input
+                label(for='pages') Amount of Pages (Enter Number)
+                input(id='pages' name='pages' value= book.pages)
 
-    div.form-input
-        label(for='description') Description
-        textarea(id='description' name='description' rows=10 cols=80) #{book.description}
+            div.form-input
+                label(for='description') Description
+                textarea(id='description' name='description' rows=10 cols=80) #{book.description}
 
-
-
-    //div.form-buttons
-    //    a.button(href=cancelUrl) Cancel
-    //    button.button.primary(type='submit') Save
+            div.form-buttons
+                a.button(href=cancelUrl) Cancel
+                button.button(type='submit') Save

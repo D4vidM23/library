@@ -49,3 +49,13 @@ tr {
 a {
   margin-right: 10px;
 }
+
+table{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+td{
+  padding: 7px;
+}
