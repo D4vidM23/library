@@ -1,9 +1,9 @@
 extends ../layout
 
 block content
-    h3 Authors
+    h2 Authors
     a.g(href=`/books`) View Books
-    a(href='/authors/add') Add New Author
+    a.f(href='/authors/add') Add New Author
     table
         thead
             tr
@@ -18,4 +18,4 @@ block content
                     td.au= author.lastname
                     td.pu= author.bookswritten
                     td
-                        a(href=`/authors/profile/${author.id}`) View Author
+                        a.h(href=`/authors/profile/${author.id}`) View Author's Profile
