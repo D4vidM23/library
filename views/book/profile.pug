@@ -22,12 +22,13 @@ block content
                     th Last
 
                     th Books Written
-                    th
+
+                    th DOB:
             tbody
                 each author in book.authors
                     tr
                         td= author.firstname
                         td= author.lastname
                         td= author.bookswritten
-                        td
+                        td= author.dob
                             a(href=`/authors/profile/${author.id}`) View Author

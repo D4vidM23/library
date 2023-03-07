@@ -2,6 +2,7 @@ extends ../layout
 
 block content
     h3 Authors
+    a.g(href=`/books`) View Books
     a(href='/authors/add') Add New Author
     table
         thead
@@ -16,4 +17,5 @@ block content
                     td.ti= author.firstname
                     td.au= author.lastname
                     td.pu= author.bookswritten
+                    td
                         a(href=`/authors/profile/${author.id}`) View Author
