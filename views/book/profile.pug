@@ -3,14 +3,15 @@ extends ../layout
 block content
     h3= book.title
     a.back(href=`/books`) Back
-    a(href=`/books/edit/${book.id}`) Edit Book
-    a(href=`/books/delete/${book.id}`) Delete Book
+    a.edit(href=`/books/edit/${book.id}`) Edit Book
+    a.delete(href=`/books/delete/${book.id}`) Delete Book
     div
         p Author: #{book.author}
         p Publisher: #{book.publisher}
         p Genre: #{book.genre}
         p Pages: #{book.pages}
         p= book.description
+        img(src= book.image)
 
     div.authors
         h4 The Author(s):
@@ -25,10 +26,10 @@ block content
 
                     th DOB:
             tbody
-                each author in book.authors
-                    tr
-                        td= author.firstname
-                        td= author.lastname
-                        td= author.bookswritten
-                        td= author.dob
+                 each author in book.authors
+                     tr
+                         td= author.firstname
+                         td= author.lastname
+                         td= author.bookswritten
+                         td= author.dob
                             a(href=`/authors/profile/${author.id}`) View Author

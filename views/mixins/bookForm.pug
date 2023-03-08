@@ -33,5 +33,5 @@ mixin bookForm(book, genre, saveUrl, cancelUrl)
                 textarea(id='description' name='description' rows=10 cols=80) #{book.description}
 
             div.form-buttons
-                a.button(href=cancelUrl) Cancel
+                a.cancel(href=cancelUrl) Cancel
                 button.button(type='submit') Save

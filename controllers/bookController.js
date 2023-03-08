@@ -1,5 +1,5 @@
 const {Book} = require('../models')
-const genres = ['Fiction', 'Science Fiction', 'Non-Fiction', 'Biography', 'Auto-Biography', 'Magazine Article', 'Historical Fiction', 'Mystery', 'Horror']
+const genres = ['Fiction', 'Science Fiction', 'Non-Fiction', 'Biography', 'Auto-Biography', 'Magazine Article', 'Historical Fiction', 'Mystery', 'Horror', 'Historical Non-Fiction']
 
 module.exports.viewAll = async function (req, res) {
     const books = await Book.findAll();
